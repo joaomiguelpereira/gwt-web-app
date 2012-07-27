@@ -2,11 +2,18 @@
 <!--
   ~ Copyright (c) 2012 Joao Pereira
   ~
-  ~ This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
   ~
-  ~ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
   ~
-  ~ You should have received a copy of the GNU General Public License along with this program.If not, see <http://www.gnu.org/licenses/>.
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -27,9 +34,11 @@
         <jdk.version>1.6</jdk.version>
         <!-- GWT needs at least java 1.5 -->
         <gin.version>1.5.0</gin.version>
-
+        <mockito.version>1.9.0</mockito.version>
+        <gae.version>1.7.0</gae.version>
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
     </properties>
 
     <dependencies>
@@ -41,7 +50,7 @@
             <version>${gin.version}</version>
             <scope>provided</scope>
         </dependency>
-
+        <!--GWT Dependencies-->
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-servlet</artifactId>
@@ -54,6 +63,8 @@
             <version>${gwtVersion}</version>
             <scope>provided</scope>
         </dependency>
+
+        <!--Testing-->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -61,14 +72,23 @@
             <scope>test</scope>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
+
 
     <build>
         <!-- Generate compiled stuff in the folder used for developing mode -->
         <outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
 
+
         <plugins>
+
 
             <!-- GWT Maven Plugin -->
             <plugin>
@@ -120,6 +140,7 @@
                     <target>${jdk.version}</target>
                 </configuration>
             </plugin>
+
         </plugins>
 
     </build>

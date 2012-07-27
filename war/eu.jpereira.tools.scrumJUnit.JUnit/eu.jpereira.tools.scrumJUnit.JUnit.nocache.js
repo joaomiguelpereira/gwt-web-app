@@ -1,3 +1,20 @@
+/*
+ * Copyright (c) 2012 Joao Pereira
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 function eu_jpereira_tools_scrumJUnit_JUnit(){var N='',ub='" for "gwt:onLoadErrorFn"',sb='" for "gwt:onPropertyErrorFn"',gb='"><\/script>',X='#',Sb='.cache.html',Z='/',Rb=':',mb='::',$b='<script defer="defer">eu_jpereira_tools_scrumJUnit_JUnit.onInjectionDone(\'eu.jpereira.tools.scrumJUnit.JUnit\')<\/script>',fb='<script id="',pb='=',Y='?',Db='ActiveXObject',rb='Bad handler "',Eb='ChromeTab.ChromeFrame',Zb='DOMContentLoaded',Qb="GWT module 'eu.jpereira.tools.scrumJUnit.JUnit' may need to be (re)compiled",hb='SCRIPT',eb='__gwt_marker_eu.jpereira.tools.scrumJUnit.JUnit',ib='base',ab='baseUrl',R='begin',Q='bootstrap',Cb='chromeframe',_='clear.cache.gif',ob='content',W='end',O='eu.jpereira.tools.scrumJUnit.JUnit',cb='eu.jpereira.tools.scrumJUnit.JUnit.nocache.js',lb='eu.jpereira.tools.scrumJUnit.JUnit::',Kb='gecko',Lb='gecko1_8',S='gwt.codesvr=',T='gwt.hosted=',U='gwt.hybrid',Tb='gwt/standard/standard.css',tb='gwt:onLoadErrorFn',qb='gwt:onPropertyErrorFn',nb='gwt:property',Yb='head',Ob='hosted.html?eu_jpereira_tools_scrumJUnit_JUnit',Xb='href',Jb='ie6',Ib='ie8',Hb='ie9',vb='iframe',$='img',wb="javascript:''",Ub='link',Nb='loadExternalRefs',jb='meta',yb='moduleRequested',V='moduleStartup',Gb='msie',kb='name',Ab='opera',xb='position:absolute;width:0;height:0;border:none',Vb='rel',Fb='safari',bb='script',Pb='selectingPermutation',P='startup',Wb='stylesheet',db='undefined',Mb='unknown',zb='user.agent',Bb='webkit';var l=window,m=document,n=l.__gwtStatsEvent?function(a){return l.__gwtStatsEvent(a)}:null,o=l.__gwtStatsSessionId?l.__gwtStatsSessionId:null,p,q,r,s=N,t={},u=[],v=[],w=[],x=0,y,z;n&&n({moduleName:O,sessionId:o,subSystem:P,evtGroup:Q,millis:(new Date).getTime(),type:R});if(!l.__gwt_stylesLoaded){l.__gwt_stylesLoaded={}}if(!l.__gwt_scriptsLoaded){l.__gwt_scriptsLoaded={}}function A(){var b=false;try{var c=l.location.search;return (c.indexOf(S)!=-1||(c.indexOf(T)!=-1||l.external&&l.external.gwtOnLoad))&&c.indexOf(U)==-1}catch(a){}A=function(){return b};return b}
 function B(){if(p&&q){var b=m.getElementById(O);var c=b.contentWindow;if(A()){c.__gwt_getProperty=function(a){return F(a)}}eu_jpereira_tools_scrumJUnit_JUnit=null;c.gwtOnLoad(y,O,s,x);n&&n({moduleName:O,sessionId:o,subSystem:P,evtGroup:V,millis:(new Date).getTime(),type:W})}}
 function C(){function e(a){var b=a.lastIndexOf(X);if(b==-1){b=a.length}var c=a.indexOf(Y);if(c==-1){c=a.length}var d=a.lastIndexOf(Z,Math.min(c,b));return d>=0?a.substring(0,d+1):N}
