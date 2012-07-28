@@ -18,23 +18,22 @@
 package eu.jpereira.management.scrum.web.client.injection;
 
 import com.google.gwt.inject.client.AbstractGinModule;
-
 import com.google.inject.Provides;
-import eu.jpereira.management.scrum.web.client.view.ClientView;
-import eu.jpereira.management.scrum.web.client.view.html.HTMLClientView;
 import eu.jpereira.management.scrum.web.client.application.ScrumWebApplication;
 import eu.jpereira.management.scrum.web.client.application.WebApplication;
+import eu.jpereira.management.scrum.web.client.view.ClientView;
+import eu.jpereira.management.scrum.web.client.view.LayoutClientView;
 
 public class WebApplicationModule extends AbstractGinModule {
 
-	@Override
-	protected void configure() {
-		bind(WebApplication.class).to(ScrumWebApplication.class).asEagerSingleton();
-	}
+    @Override
+    protected void configure() {
+        bind(WebApplication.class).to(ScrumWebApplication.class).asEagerSingleton();
+    }
 
-	@Provides
-	protected ClientView provideSingletonClientView() {
-		return new HTMLClientView();
-	}
+    @Provides
+    protected ClientView provideSingletonClientView() {
+        return new LayoutClientView();
+    }
 
 }

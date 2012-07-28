@@ -1,0 +1,32 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:DockLayoutPanel unit="PX">
+        <g:north size="120">
+            <g:FlowPanel>
+                <g:Label ui:field="name"></g:Label>
+                <g:Label>Top</g:Label>
+            </g:FlowPanel>
+        </g:north>
+
+        <g:center>
+            <g:FlowPanel>
+                <g:Label>Body</g:Label>
+            </g:FlowPanel>
+
+        </g:center>
+
+        <g:west size='300'>
+            <g:FlowPanel>
+                <g:HTMLPanel>
+                    <ul>
+                        <li>Sidebar</li>
+                        <li>Sidebar</li>
+                        <li>Sidebar</li>
+                    </ul>
+                </g:HTMLPanel>
+            </g:FlowPanel>
+        </g:west>
+
+
+    </g:DockLayoutPanel>
+</ui:UiBinder>

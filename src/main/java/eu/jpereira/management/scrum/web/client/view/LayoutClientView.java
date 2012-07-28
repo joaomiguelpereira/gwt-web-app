@@ -15,15 +15,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package eu.jpereira.management.scrum.web.client.view.html;
+package eu.jpereira.management.scrum.web.client.view;
 
-import com.google.gwt.dom.client.Style;
-import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.*;
-import eu.jpereira.management.scrum.web.client.ApplicationLayout;
-import eu.jpereira.management.scrum.web.client.view.ClientView;
-
-import java.util.Map;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
 
 /**
  * Created with IntelliJ IDEA.
@@ -32,17 +26,14 @@ import java.util.Map;
  * Time: 10:15 PM
  * To change this template use File | Settings | File Templates.
  */
-public class HTMLClientView implements ClientView {
+public class LayoutClientView implements ClientView {
 
 
     @Override
     public void render() {
-
         //Hook here with parent container
         RootLayoutPanel rootLayoutPanel = RootLayoutPanel.get();
-
-        ApplicationLayout layout = new ApplicationLayout();
-        layout.setName("Test");
+        DefaultLayout layout = new DefaultLayout();
         rootLayoutPanel.add(layout);
     }
 }
