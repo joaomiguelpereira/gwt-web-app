@@ -20,6 +20,7 @@ package eu.jpereira.management.scrum.web.client.view.html;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
+import eu.jpereira.management.scrum.web.client.ApplicationLayout;
 import eu.jpereira.management.scrum.web.client.view.ClientView;
 
 import java.util.Map;
@@ -34,22 +35,14 @@ import java.util.Map;
 public class HTMLClientView implements ClientView {
 
 
+    @Override
+    public void render() {
 
+        //Hook here with parent container
+        RootLayoutPanel rootLayoutPanel = RootLayoutPanel.get();
 
-	@Override
-	public void render() {
-
-		//Hook here with parent container
-		RootLayoutPanel rootLayoutPanel = RootLayoutPanel.get();
-
-		DockLayoutPanel dockLayoutPannel = new DockLayoutPanel(Style.Unit.EM);
-
-		dockLayoutPannel.addNorth(new HTML("north"), 2);
-		dockLayoutPannel.addSouth(new HTML("south"), 2);
-		dockLayoutPannel.addEast(new HTML("east"), 2);
-		dockLayoutPannel.addWest(new HTML("west"), 2);
-		dockLayoutPannel.add(new HTML("center"));
-
-		rootLayoutPanel.add(dockLayoutPannel);
-	}
+        ApplicationLayout layout = new ApplicationLayout();
+        layout.setName("Test");
+        rootLayoutPanel.add(layout);
+    }
 }
