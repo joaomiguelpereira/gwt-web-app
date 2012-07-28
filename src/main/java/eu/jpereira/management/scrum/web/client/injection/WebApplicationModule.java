@@ -21,7 +21,7 @@ import com.google.gwt.inject.client.AbstractGinModule;
 
 import com.google.inject.Provides;
 import eu.jpereira.management.scrum.web.client.view.ClientView;
-import eu.jpereira.management.scrum.web.client.view.HTMLClientView;
+import eu.jpereira.management.scrum.web.client.view.html.HTMLClientView;
 import eu.jpereira.management.scrum.web.client.application.ScrumWebApplication;
 import eu.jpereira.management.scrum.web.client.application.WebApplication;
 

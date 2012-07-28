@@ -15,12 +15,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package eu.jpereira.management.scrum.web.client.view;
+package eu.jpereira.management.scrum.web.client.view.html;
 
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.RootLayoutPanel;
-import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.*;
+import eu.jpereira.management.scrum.web.client.view.ClientView;
 
 import java.util.Map;
 
@@ -41,8 +41,15 @@ public class HTMLClientView implements ClientView {
 
 		//Hook here with parent container
 		RootLayoutPanel rootLayoutPanel = RootLayoutPanel.get();
-		Label label = new Label("Test");
-		rootLayoutPanel.add(label);
-		Window.alert("Hello there");
+
+		DockLayoutPanel dockLayoutPannel = new DockLayoutPanel(Style.Unit.EM);
+
+		dockLayoutPannel.addNorth(new HTML("north"), 2);
+		dockLayoutPannel.addSouth(new HTML("south"), 2);
+		dockLayoutPannel.addEast(new HTML("east"), 2);
+		dockLayoutPannel.addWest(new HTML("west"), 2);
+		dockLayoutPannel.add(new HTML("center"));
+
+		rootLayoutPanel.add(dockLayoutPannel);
 	}
 }
